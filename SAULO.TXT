@@ -5,11 +5,12 @@ Isabel Sterim Saade
 Maria Carla dos Santos Bellote
 
 1. Criar o venv
-    py -m venv .venv
+    py -m venv venv
 
 2. Entrar no venv
     source venv/bin/activate
 ou
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
     .\venv\Scripts\activate
 
 3. Instalar as biblitoecas
