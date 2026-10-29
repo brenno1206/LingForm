@@ -1,20 +1,16 @@
-GRUPO: 
+GRUPO:
 Brenno Gomes Breda
 Daphne Rocha Amigo
 Isabel Sterim Saade
 Maria Carla dos Santos Bellote
 
-1. Criar o venv
-    py -m venv venv
+Conversor AFND (com movimentos vazios 'h') -> AFD equivalente + teste de palavras.
 
-2. Entrar no venv
-    source venv/bin/activate
-ou
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-    .\venv\Scripts\activate
+Executar (na pasta onde estao entrada_1.txt e entrada_2.txt):
+    python main.py
 
-3. Instalar as biblitoecas
-    pip install -r requirements.txt
+Gera na mesma pasta:
+    saida_1.txt  -> AFD equivalente (mesmo formato da entrada_1)
+    saida_2.txt  -> cada palavra de entrada_2.txt + TAB + aceita/rejeita
 
-4. Rodar o projeto
-    streamlit run app.py
+Tambem aceita caminhos: python main.py entrada_1.txt entrada_2.txt saida_1.txt saida_2.txt
